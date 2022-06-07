@@ -26,3 +26,9 @@ def parent():
     first_child()
 parent()
 #Возврат функций из функций
+#TyT
+def son(num):
+    def work():
+        return  "Get money"
+    if num == 1:
+        return  work()
