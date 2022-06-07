@@ -11,3 +11,18 @@ def greet_vanya(greeter_func):
 
 #greet_vanya() в качестве аргумента получает другую функцию,
 greet_vanya(say_hello)
+
+#Внутренние функции
+def parent():
+    print("Привет из функции parent().")
+
+    def first_child():
+        print("Привет из функции first_child().")
+
+    def second_child():
+        print("Привет из функции second_child().")
+
+    second_child()
+    first_child()
+parent()
+#Возврат функций из функций
